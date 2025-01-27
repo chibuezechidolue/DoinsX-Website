@@ -1,0 +1,172 @@
+body{
+    background-color: white;
+    /* background-color: black; */
+}
+
+/* Header */
+nav{
+    margin-left: 3%;
+    /* background-color: black; */
+}
+.navColor{
+    text-decoration: none;
+    color: black;
+    
+}
+.navColor:hover{
+    color: grey;
+}
+.navColor:focus{
+  color:green;
+}
+
+.logoImg{
+    height: 45px;
+  }
+
+
+/* Footer */
+footer{
+    padding-top: 2%;
+    background-color: #111111;
+    /* background-color: #F4FBF4; */
+    background: linear-gradient(to right, black 10%, #9c9e9f 90% );
+    /* background: linear-gradient(to right, #9c9e9f 10% , black 90%); */
+    
+}
+
+.footerText{
+    color: white;
+    text-align: center;
+}
+
+.footerLink{
+    text-decoration: none;
+    color:white;
+}
+.footerLink:hover{
+    text-decoration: none;
+    color:#6C757D;
+}
+.socialsLink:hover{
+    color: burlywood;
+
+}
+
+.footerDivider{
+    color: white;
+    width: 40%;
+    margin: auto;
+}
+
+
+/* Index Page */
+
+.hero{
+    margin: 0 3% 3%;
+}
+
+.whatWeDO{
+    margin: 5% 2%; 
+}
+.whatWeDOHeading{
+margin-left: 5%;
+}
+
+.activities{
+    margin: 3% 2%;
+}
+
+.talents{
+    padding: 5% 13%;
+    /* margin-bottom: 10%; */
+    margin: 0 3% 10% 3%;
+    background-color: #9c9e9f;
+}
+
+.talentsImg{
+    background-color: green;
+}
+
+/* .talentsImg1{
+    transform: rotate(3deg)
+}
+.talentsImg2{
+    transform: rotate(357deg)
+}
+.talentsImg3{
+    transform: rotate(2deg)
+}
+.talentsImg4{
+    transform: rotate(358deg)
+} */
+ .affirmations{
+    margin: 5% 3% 10% 3%;
+ }
+ .affirmationsHeading{
+    text-align: center;  
+ }
+
+ .circleShape{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    background: linear-gradient(to right, black 10%, #9c9e9f 90% );
+    margin: 0 auto 1% auto;
+ }
+
+ .rectangleShape{
+    width: 50px;
+    height: 10px;
+    border-radius: 10%;
+    background-color: #9c9e9f;
+    background: linear-gradient(to right, black 10%, #9c9e9f 90% );
+    /* background: linear-gradient(to right, #9c9e9f 10% , black 90%); */
+    margin: 0 auto 1% auto;
+ }
+
+
+ /* Contact Us */
+
+ .contactUs{
+    margin: 0 2% 2% 2%;
+ }
+
+ .sendMessage{
+    background-color: #F4FBF4;
+    padding-top: 24px;
+ }
+
+
+ .description{
+    background-color: #F4FBF4;
+    /* padding-top: 1%; */
+ }
+
+ .statements{
+    margin: 0 2%;
+    /* padding-bottom: 3%; */
+ }
+
+ .aboutFounder{
+    background-color: #F4FBF4;
+ }
+
+
+
+ /* About Us */
+
+ .pageHeading{
+    /* background-color: black; */
+    /* background: linear-gradient(to right, black 10%, #9c9e9f 90% ); */
+    background: linear-gradient(to right, #9c9e9f 10% , black 90%); 
+    color: white;
+ }
+
+ .pageSubHeading{
+    /* background-color: black; */
+    background: linear-gradient(to right, black 10%, #9c9e9f 90% );
+    /* background: linear-gradient(to right, #9c9e9f 10% , black 90%);  */
+    color: white;
+ }
