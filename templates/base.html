@@ -54,10 +54,10 @@
     <div class="row">
       <div class="col-12"><img class="logoImg" src="static/images/partLogo.png" alt=""></div>
       <div class="col-12 footerText">
-         <span class="me-5 "><a class="footerLink">FAQs</a> </span>
-         <span class="me-5"><a class="footerLink">Talents</a></span> 
-         <span class="me-5"><a class="footerLink">About Us</a> </span>
-         <span class=""><a class="footerLink">Contact Us</a> </span>
+         <span class="me-5 "><a href="{% url 'faqs-page'%}" class="footerLink">FAQs</a> </span>
+         <span class="me-5"><a href="{% url 'faqs-page'%}" class="footerLink">Talents</a></span> 
+         <span class="me-5"><a href="{% url 'about-page'%}" class="footerLink">About Us</a> </span>
+         <span class=""><a href="{% url 'contact-page'%}" class="footerLink">Contact Us</a> </span>
          <br>
          <div class="mt-3">
           <span class="ms-5 me-3"><a class="footerLink socialsLink" href=""><i class="fa-brands fa-facebook fa-lg"></i></a></span>
@@ -76,7 +76,7 @@
         <br>
         <div class="">
             <p class=" small footerText">Terms & Privacy</p>
-            <p class="footerText"><small >DoinsX Talent Company © {% now "Y" %} All rights reserved</small></p>
+            <p class="footerText"><small >DoinsX Talent Management Company © {% now "Y" %} All rights reserved</small></p>
         </div>
         
     <script src="{% static 'javascript/script.js'%}"></script>

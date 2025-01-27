@@ -72,6 +72,9 @@ footer{
 .whatWeDOHeading{
 margin-left: 5%;
 }
+.whatWeDOSubHeading{
+    font-size: 2rem;
+}
 
 .activities{
     margin: 3% 2%;
@@ -169,4 +172,15 @@ margin-left: 5%;
     background: linear-gradient(to right, black 10%, #9c9e9f 90% );
     /* background: linear-gradient(to right, #9c9e9f 10% , black 90%);  */
     color: white;
+ }
+
+
+
+.accordionBtn{
+    font-size: 1.5rem;
+    margin-top: 2%;
+ }
+
+ .accordion-button:not(.collapsed){
+    color: green;
  }
