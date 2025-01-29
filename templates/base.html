@@ -16,7 +16,7 @@
 <header id="header">
     <nav class="navbar navbar-expand-md  ">
         <div class="container-fluid px-0">
-           <a class="navbar-brand navColor" href="/"><img class="logoImg" src="static/images/partLogo.png" alt=""></a>
+          <a class="navbar-brand navColor" href="/"><img class="logoImg" src="{% static 'images/partLogo.png'%}" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
           </button>
@@ -26,16 +26,16 @@
                 <a class="nav-link navColor" id="home" href="{% url 'home-page' %}">Home</a>
               </li>
               <li class="nav-item dropdown ">
-                <a class="nav-link navColor" id="talents" href="#">Talents</a>
+                <a class="nav-link navColor" id="talents" href="{% url 'talent-categories'%}">Talents</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navColor" id="about-us" href="{% url 'about-page' %}">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navColor" id="projects" href="{% url 'faqs-page' %}" >FAQs</a>
+                <a class="nav-link navColor" id="faqs" href="{% url 'faqs-page' %}" >FAQs</a>
               </li>
               <li class="nav-item">
-            <a class="nav-link navColor" id="contact-us" href="{% url 'contact-page' %}">Contact Us</button></a>
+            <a class="nav-link navColor" id="contact-us" href="{% url 'contact-page' %}">Contact us</button></a>
             </li>
             </ul>
             
@@ -52,10 +52,10 @@
 <footer>
   
     <div class="row">
-      <div class="col-12"><img class="logoImg" src="static/images/partLogo.png" alt=""></div>
+      <div class="col-12"><img class="logoImg" src="{% static 'images/partLogo.png'%}" alt=""></div>
       <div class="col-12 footerText">
          <span class="me-5 "><a href="{% url 'faqs-page'%}" class="footerLink">FAQs</a> </span>
-         <span class="me-5"><a href="{% url 'faqs-page'%}" class="footerLink">Talents</a></span> 
+         <span class="me-5"><a href="{% url 'talent-categories'%}" class="footerLink">Talents</a></span> 
          <span class="me-5"><a href="{% url 'about-page'%}" class="footerLink">About Us</a> </span>
          <span class=""><a href="{% url 'contact-page'%}" class="footerLink">Contact Us</a> </span>
          <br>

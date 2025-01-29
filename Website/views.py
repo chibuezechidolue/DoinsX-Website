@@ -17,3 +17,13 @@ def contact_us(request):
 
 def faq(request):
     return render(request,"faq.html")
+
+def talent_category(request):
+    return render(request,"talent/talent-categories.html")
+
+def talents(request,category):
+    print(category)
+    return render(request,"talent/talents.html",{"category":category})
+
+def talent_profile(request,talent_name):
+    return render(request,"talent/talent-profile.html", {"name":talent_name})

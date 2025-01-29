@@ -85,6 +85,7 @@ margin-left: 5%;
     /* margin-bottom: 10%; */
     margin: 0 3% 10% 3%;
     background-color: #9c9e9f;
+    /* background-color: #F1F1F1; */
 }
 
 .talentsImg{
@@ -93,14 +94,14 @@ margin-left: 5%;
 
 /* .talentsImg1{
     transform: rotate(3deg)
-}
-.talentsImg2{
+} */
+/* .talentsImg2{
     transform: rotate(357deg)
-}
-.talentsImg3{
+} */
+/* .talentsImg3{
     transform: rotate(2deg)
-}
-.talentsImg4{
+} */
+/* .talentsImg4{
     transform: rotate(358deg)
 } */
  .affirmations{
@@ -174,7 +175,10 @@ margin-left: 5%;
     color: white;
  }
 
-
+/* FAQS */
+/* .faqHeading{
+    background-color: grey;
+} */
 
 .accordionBtn{
     font-size: 1.5rem;
@@ -184,3 +188,70 @@ margin-left: 5%;
  .accordion-button:not(.collapsed){
     color: green;
  }
+
+ /* Talents */
+
+.heroSide{
+    background: linear-gradient(to bottom, black 35%, #9c9e9f 65% );
+}
+
+.verticalText{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    /* text-align: center; */
+    color: white;
+    font-size: 3rem;
+    
+    /* vertical-align:text-bottom; */
+    
+    /* display: block; */
+    /* position: relative; */
+    /* padding: auto; */
+}
+
+/* Talent Categories */
+
+.talentCategories{
+    margin: 0 2%;
+}
+.cateroryNumber{
+ font-size: 1.5rem;
+ font-weight: bold;
+ /* margin-right: 3%; */
+}
+
+.talentCaterory{
+    font-size: 1.5rem;
+}
+
+.categoryBtn{
+    font-size: 1.5rem;
+    margin-left: 5%;
+    /* background-color: green;
+    color: white; */
+    
+}
+.talentImage{
+    height: 500px;
+}
+
+
+.talentDiv {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+  }
+  
+.talentName {
+    display: inline-block;
+    align-self: flex-end;
+    /* align-self: center; */
+    font-size: larger;
+
+  }
+
+.talentBtn{
+    display: inline-block;
+    align-self: flex-end;
+    /* align-self: center; */
+}

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+{%block title%} Talents Category @DoinsX {%endblock title%}
+{% block content%}
+
+<section class="talentCategories">
+    
+    <div class="row justify-content-center">
+        <div class="col-2 bg-dark heroSide">
+            <h1 class="verticalText">DOINX</h1>
+        </div>
+        <div class="col-8">
+            <img class="w-100 talentImage" src="{% static 'images/talent/1.jpg'%}" alt="hero image">
+        </div>
+        <div class="col-2 heroSide">
+            <h1 class="verticalText">TALENTS</h1>
+        </div>
+    </div>
+
+
+    <div class="talentCategoriesHeading">
+        <h2 class="text-center">FREQUENTLY ASKED QUESTIONS</h2>
+        <p class="text-center">WE TOOK TIME TO ANSWEWR FEW OF SOME OF THE IMPORTANT QUESTIONS FREQUENTLY ASKED BY CUSTOMER</p>
+      </div>
+
+
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-12">
+    <div class="row">
+            <div class="col-8">
+
+            <span class="me-5 cateroryNumber">01</span><span class=" talentCaterory">Music Talents</span>
+            </div>
+        <div class="col-4 d-grid ">
+            <a class="btn btn-success categoryBtn" href="{% url 'talents-page' category='music' %}">View Talents</a>
+        </div>
+    </div>
+        <hr>
+
+    <div class="row">
+        <div class="col-8 ">
+        <span class="me-5 cateroryNumber">01</span><span class=" talentCaterory">Music Talents</span>
+        </div>
+        <div class="col-4 d-grid">
+            <button class="btn btn-success categoryBtn">View Talents</button>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-8">
+
+        <span class="me-5 cateroryNumber">01</span><span class=" talentCaterory">Music Talents</span>
+        </div>
+        <div class="col-4 d-grid">
+            <button class="btn btn-success categoryBtn">View Talents</button>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-8">
+        <span class="me-5 cateroryNumber">01</span><span class=" talentCaterory">Music Talents</span>
+        </div>
+        <div class="col-4 d-grid">
+            <button class="btn btn-success categoryBtn">View Talents</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-8">
+
+        <span class="me-5 cateroryNumber">01</span><span class=" talentCaterory">Music Talents</span>
+        </div>
+        <div class="col-4 d-grid">
+            <button class="btn btn-success categoryBtn">View Talents</button>
+        </div>
+    </div>
+    <hr>
+
+</div>
+
+    </div>
+
+
+
+</section>
+
+{% endblock content%}
