@@ -72,12 +72,13 @@ footer{
 .whatWeDOHeading{
 margin-left: 5%;
 }
-.whatWeDOSubHeading{
-    font-size: 2rem;
-}
+
 
 .activities{
     margin: 3% 2%;
+}
+.homeImg{
+    height: 400px;
 }
 
 .talents{
@@ -87,6 +88,7 @@ margin-left: 5%;
     background-color: #9c9e9f;
     /* background-color: #F1F1F1; */
 }
+
 
 .talentsImg{
     background-color: green;
@@ -157,6 +159,10 @@ margin-left: 5%;
     background-color: #F4FBF4;
  }
 
+ .addressMap{
+    /* height: 300px; */
+    width: 100%;
+ }
 
 
  /* About Us */
@@ -200,7 +206,7 @@ margin-left: 5%;
     text-orientation: upright;
     /* text-align: center; */
     color: white;
-    font-size: 3rem;
+    font-size: 3rem;    
     
     /* vertical-align:text-bottom; */
     
@@ -209,23 +215,35 @@ margin-left: 5%;
     /* padding: auto; */
 }
 
+.letterSpacing{
+    letter-spacing: 22px;
+}
+
 /* Talent Categories */
 
 .talentCategories{
-    margin: 0 2%;
+    margin: 0 3%;
+}
+.talentCategoriesHeading{
+    margin: 5% 0 5% 0;
+}
+
+
+.categoryFonts{
+    font-size: 1.5rem;
 }
 .cateroryNumber{
- font-size: 1.5rem;
+ /* font-size: 1.5rem; */
  font-weight: bold;
  /* margin-right: 3%; */
 }
 
 .talentCaterory{
-    font-size: 1.5rem;
+    /* padding: auto; */
 }
 
 .categoryBtn{
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin-left: 5%;
     /* background-color: green;
     color: white; */
@@ -238,15 +256,39 @@ margin-left: 5%;
 
 .talentDiv {
     display: flex;
-    height: 100px;
     justify-content: center;
+    height: 100px;
+    
+}
+
+.talentDP {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    /* padding-left: 3%; */
+    background: linear-gradient(to bottom, white 50%, grey 50% );
   }
   
+.imgChange{
+    /* display: flex; */
+    /* justify-content: center; */
+    height: 100px;
+}
+
+.imgChangeDiv{
+    display: flex;
+    justify-content: end;
+}
+
+.talentFonts{
+    font-size: 1.5rem;
+}
+
 .talentName {
     display: inline-block;
     align-self: flex-end;
     /* align-self: center; */
-    font-size: larger;
+    /* font-size: larger; */
 
   }
 
@@ -254,4 +296,127 @@ margin-left: 5%;
     display: inline-block;
     align-self: flex-end;
     /* align-self: center; */
+}
+
+/* Talen Profile */
+
+.talentProfile{
+    margin: 0 2%;
+}
+
+.dpDiv{
+    background-color: grey;
+}
+.profileInfo{
+    background-color: grey;
+    padding-left: 2%;
+    /* padding-top: 2%; */
+}
+
+.detailsRule{
+    width: 50px;
+    border-width: 5px;
+    color: blue;
+    /* margin-left: 5%; */
+}
+
+.profileWriteUps{
+    /* width: 60%;
+    margin: 0 auto; */
+    margin-left: 2%;
+}
+
+.infoTitle{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.info{
+    font-size: 1.2rem;
+}
+/* .textCenter{
+
+    
+} */
+.aboutTalent{
+    border: 1px solid;
+}
+
+
+
+
+
+
+/* @media only screen and (min-width: 768px max-width: 992) { */
+
+@media (min-width: 768px) and (max-width: 1120px) {
+    .homeImg{
+        height: 200px;
+    }
+    .talentDiscription{
+        /* font-size: xx-small; */
+        font-size: 0.5rem;
+    }
+    .talentImage{
+        height: 350px;
+    }.verticalText{
+        font-size: 2rem;
+    }.letterSpacing{
+        letter-spacing: 15px;
+    }
+    .categoryFonts{
+        font-size: 1rem;
+    }
+    .talentFonts{
+        font-size: 0.9rem;
+    }
+    .pageFont{
+        font-size: 0.7rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1400px) {
+    .homeImg{
+        height: 300px;
+    }
+    /* .talentImage{
+        height: 400px;
+    }.verticalText{
+        font-size: 2.5rem;
+    }.letterSpacing{
+        letter-spacing: 16px;
+    } */
+}
+
+@media only screen and (max-width: 768px) {
+    .homeImg{
+        height: 150px;
+    }
+    .talentDiscription{
+        /* font-size: xx-small; */
+        font-size: 0.3rem;
+    }
+    .talentImage{
+        height: 200px;
+    }.verticalText{
+        font-size: 1rem;
+    }.letterSpacing{
+        letter-spacing: 10px;
+    }
+
+    .categoryFonts{
+        font-size: 0.8rem;
+    }
+
+    .talentFonts{
+        font-size: 0.7rem;
+    }
+    .pageFont{
+        font-size: 0.65rem;
+    }
+
+
 }

@@ -4,66 +4,73 @@
 {% block content%}
 
 <section class="talentCategories">
-    
-    <div class="row justify-content-center">
-        <div class="col-2 bg-dark heroSide">
-            <h1 class="verticalText">DOINX</h1>
+        <div class="">
+            <img class="img-fluid " src="{% static 'images/home/3.jpg'%}" alt="hero image">
         </div>
-        <div class="col-8">
-            <img class="w-100 talentImage" src="{% static 'images/talent/1.jpg'%}" alt="hero image">
-        </div>
-        <div class="col-2 heroSide">
-            <h1 class="verticalText">TALENTS</h1>
-        </div>
-    </div>
-
 
     <div class="talentCategoriesHeading">
-        <h2 class="text-center">FREQUENTLY ASKED QUESTIONS</h2>
-        <p class="text-center">WE TOOK TIME TO ANSWEWR FEW OF SOME OF THE IMPORTANT QUESTIONS FREQUENTLY ASKED BY CUSTOMER</p>
-    </div>
+        <h2 class="text-center ">OUR TALENT CATEGORIES</h2>
+        <p class="text-center ">THE TALENTS MANAGED BY US IS MAINLY DIVIDED INTO THESE GENRE OF TALENTS </p>
+      </div>
 
 
-        <div class="row">
-            <div class="col-4 talentDiv">
-            <span class="me-5 talentName">Stanley Chidolue</span>
+        <div class="row ">
+            <div class="col-4  talentDiv talentFonts">
+            <span class="talentName my-auto ">Stanley Chidolue</span>
             </div>
             <div class="col-4  talentDiv">
             <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
             </div>
             <div class="col-4 talentDiv">
-                <a class="btn btn-success categoryBtn talentBtn" href="{% url 'talent-profile' talent_name='stan chidolue is' %}">View Profile</a>
+                <a class="btn btn-success categoryBtn talentBtn talentFonts  my-auto" href="{% url 'talent-profile' talent_name='stan chidolue is' %}">View Profile</a>
             </div>
         </div>
         <hr>
 
-        <div class="row">
+        <div class="row talentFonts">
             <div class="col-4 talentDiv">
-            <span class="me-5 talentName">Stanley Chidolue</span>
+            <span class=" my-auto talentName">Stanley Chidolue</span>
             </div>
             <div class="col-4  talentDiv">
             <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
             </div>
             <div class="col-4 talentDiv">
-                <a class="btn btn-success categoryBtn talentBtn" href="{ url 'talent-profile' name='music' %}">View Profile</a>
+                <a class="btn btn-success my-auto categoryBtn talentBtn talentFonts " href="{ url 'talent-profile' name='music' %}">View Profile</a>
             </div>
         </div>
         <hr>
 
-        <div class="row">
+        <div class="row talentFonts">
             <div class="col-4 talentDiv">
-            <span class="me-5 talentName">Stanley Chidolue</span>
+            <span class=" my-auto talentName">Stanley Chidolue</span>
             </div>
             <div class="col-4  talentDiv">
             <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
             </div>
             <div class="col-4 talentDiv">
-                <a class="btn btn-success categoryBtn talentBtn" href="{ url 'talent-profile' name='music' %}">View Profile</a>
+                <a class="btn btn-success my-auto categoryBtn talentBtn talentFonts " href="{ url 'talent-profile' name='music' %}">View Profile</a>
             </div>
         </div>
         <hr>
 
         
+        <!-- Temporary code, to be replaced by actual pagination -->
+
+        <div class="my-5" style="justify-content: center; display: flex;" >
+        <div class="pages" >
+        <span class="step-links  ">
+            <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="directions btn btn-success pageFont "><i class="bi bi-chevron-left"></i></button></a>
+            <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="btn btn-secondary pageFont "> 1</button></a> 
+  
+            <a href="?page={{ page_obj.number }}"><button type="button" class="btn btn-success pageFont"> 2</button></a>
+            <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="btn btn-success pageFont"> 3</button></a>
+            <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="directions btn btn-success pageFont"><i class="bi bi-chevron-right"></i></button></a>
+        </span>
+    </div>
+
+</div>
+</div>
+
     
 
 

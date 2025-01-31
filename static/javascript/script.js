@@ -13,3 +13,15 @@ if(currentPage==""){
 }else if (currentPage=="talents"){
     document.getElementById("talents").style.color="green";
 }
+
+
+// image change //
+
+var imgs=document.querySelectorAll(".imgChange");
+
+imgs.forEach(img => {
+    img.addEventListener("click",()=>{
+        let imgSrc= img.getAttribute('src')
+        document.querySelector(".showImg").setAttribute('src',imgSrc);
+    })
+});
