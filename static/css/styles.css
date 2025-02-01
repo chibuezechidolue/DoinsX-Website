@@ -66,13 +66,30 @@ footer{
     margin: 0 3% 3%;
 }
 
+.carouselSize{
+    height: 800px;
+}
+
 .whatWeDO{
     margin: 5% 2%; 
 }
 .whatWeDOHeading{
 margin-left: 5%;
+color: #36059B;
 }
 
+.findTalentsDiv{
+    width: max-content;
+    margin: 8% auto 4% auto;
+}
+
+.findTalents{
+    /* font-size:10rem; */
+    font-size: 9vw;
+    color: grey;
+    line-height:0.7;
+    /* line-height:6vw; */
+}
 
 .activities{
     margin: 3% 2%;
@@ -171,6 +188,9 @@ margin-left: 5%;
     /* background-color: black; */
     /* background: linear-gradient(to right, black 10%, #9c9e9f 90% ); */
     background: linear-gradient(to right, #9c9e9f 10% , black 90%); 
+    /* background: linear-gradient(to right, #493D9E  10% , #C890A7 90%);  */
+    
+
     color: white;
  }
 
@@ -304,6 +324,12 @@ margin-left: 5%;
     margin: 0 2%;
 }
 
+.navDivider{
+    height: 100px; 
+    background: linear-gradient(to right, black 10%, #9c9e9f 90% );
+    color: white;
+}
+
 .dpDiv{
     background-color: grey;
 }
@@ -329,6 +355,7 @@ margin-left: 5%;
 .infoTitle{
     font-weight: bold;
     font-size: 1.1rem;
+    
 }
 
 .info{
@@ -374,6 +401,10 @@ margin-left: 5%;
         font-size: 0.7rem;
     }
 
+    .carouselSize{
+        height: 400px;
+    }
+
 
 
 }
@@ -416,6 +447,11 @@ margin-left: 5%;
     }
     .pageFont{
         font-size: 0.65rem;
+    }
+
+
+    .carouselSize{
+        height: 300px;
     }
 
 

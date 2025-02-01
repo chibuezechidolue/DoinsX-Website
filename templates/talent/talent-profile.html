@@ -4,9 +4,12 @@
 {% block content%}
 
 <section class="talentProfile">
+    <div class="navDivider">
+        <h2 class="text-center ">Talent Managed By DoinsX</h2>
+    </div>
 
-    <div class="row justify-content-center mb-5">
-        <div class="col-md-1 col-2 me-2  dpDiv ">
+    <div class="row justify-content-center my-5">
+        <div class="col-md-1 col-2 me-2 px-0  dpDiv ">
             <div class="talentDP">
                 <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
             </div>
@@ -50,33 +53,37 @@
                     </div>
                 </div>
             </div>
-
-            <div class="aboutTalen ">
-                <br>
-                <span class="infoTitle">ABOUT <i class="fa-solid fa-down-long"></i> </span>
-                <p class="">
-                    A short discription Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
-            </div>
         </div>
         
+
         </div>
 
+        <div class="row justify-content-center">
+        <div class="col-md-10 col-10 aboutTalen" >
+            <br>
+            <br>
+            <p class="infoTitle text-center">ABOUT STANLEY <i class="fa-solid fa-down-long"></i> </p>
+            <p class="text-center">
+                A short discription Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+    </div>
 
-        <h3 class="whatWeDOHeading lh-1">PICTURES OF <br><span class="whatWeDOSubHeading">&nbsp&nbsp STANLEY</span></h3>
-    <div class="row">
-    <div class="col-md-6 col-12 mt-4 order-md-1 order-2">
-        <div class="imgChangeDiv">
+
+    <h3 class="whatWeDOHeading lh-1">PICTURES OF <br><span class="whatWeDOSubHeading">&nbsp&nbsp STANLEY</span></h3>
+    <div class="row mb-5" >
+        <div class="col-md-8 col-12 ">
+            <img class="img-fluid float-end showImg" src="{% static 'images/home/5.jpg'%}" alt="">
+        </div>
+    <div class="col-md-4 col-12 mt-4   mt-auto">
+        <div class="imgChangeDiv float-start">
             <img class="me-2  imgChange" src="{% static 'images/home/3a.jpg'%}" alt="">
             <img class="me-2 imgChange" src="{% static 'images/home/3b.jpg'%}" alt="">
             <img class="imgChange" src="{% static 'images/home/3.jpg'%}" alt="">
         </div>
-    </div>
-    <div class="col-md-6 col-12 order-md-2 order-1">
-        <img class="w-100 showImg" src="{% static 'images/home/5.jpg'%}" alt="">
     </div>
     </div>
     
