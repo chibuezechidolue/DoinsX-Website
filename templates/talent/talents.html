@@ -8,47 +8,47 @@
             <img class="img-fluid " src="{% static 'images/home/3.jpg'%}" alt="hero image">
         </div>
 
-    <div class="talentCategoriesHeading">
-        <h2 class="text-center ">OUR TALENT CATEGORIES</h2>
-        <p class="text-center ">THE TALENTS MANAGED BY US IS MAINLY DIVIDED INTO THESE GENRE OF TALENTS </p>
+    <div class=" mb-5 talentCategoriesHeading">
+        <h2 class="text-center ">Our Talent Categories</h2>
+        <p class="text-center lh-1">THE TALENTS MANAGED BY US IS MAINLY DIVIDED INTO THESE GENRE OF TALENTS </p>
       </div>
 
 
         <div class="row ">
-            <div class="col-4  talentDiv talentFonts">
-            <span class="talentName my-auto ">Stanley Chidolue</span>
+            <div class="col-4 px-0 talentDiv talentFonts">
+            <span class="talentName my-auto text-uppercase">STANLEY CHIDOLUE</span>
             </div>
             <div class="col-4  talentDiv">
             <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
             </div>
             <div class="col-4 talentDiv">
-                <a class="btn btn-success categoryBtn talentBtn talentFonts  my-auto" href="{% url 'talent-profile' talent_name='stan chidolue is' %}">View Profile</a>
+                <a class="btn btn-secondary categoryBtn talentBtn talentFonts  my-auto" href="{% url 'talent-profile' talent_name='stan chidolue is' %}">View Profile</a>
             </div>
         </div>
         <hr>
 
         <div class="row talentFonts">
-            <div class="col-4 talentDiv">
-            <span class=" my-auto talentName">Stanley Chidolue</span>
+            <div class="col-4 px-0 talentDiv">
+            <span class=" my-auto talentName text-uppercase ">Stanley Chidolue</span>
             </div>
             <div class="col-4  talentDiv">
             <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
             </div>
             <div class="col-4 talentDiv">
-                <a class="btn btn-success my-auto categoryBtn talentBtn talentFonts " href="{ url 'talent-profile' name='music' %}">View Profile</a>
+                <a class="btn btn-secondary my-auto categoryBtn talentBtn talentFonts " href="{ url 'talent-profile' name='music' %}">View Profile</a>
             </div>
         </div>
         <hr>
 
         <div class="row talentFonts">
-            <div class="col-4 talentDiv">
-            <span class=" my-auto talentName">Stanley Chidolue</span>
+            <div class="col-4 px-0 talentDiv">
+            <span class=" my-auto talentName text-uppercase">Stanley Chidolue</span>
             </div>
             <div class="col-4  talentDiv">
             <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
             </div>
             <div class="col-4 talentDiv">
-                <a class="btn btn-success my-auto categoryBtn talentBtn talentFonts " href="{ url 'talent-profile' name='music' %}">View Profile</a>
+                <a class="btn btn-secondary my-auto categoryBtn talentBtn talentFonts " href="{ url 'talent-profile' name='music' %}">View Profile</a>
             </div>
         </div>
         <hr>
@@ -59,12 +59,12 @@
         <div class="my-5" style="justify-content: center; display: flex;" >
         <div class="pages" >
         <span class="step-links  ">
-            <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="directions btn btn-success pageFont "><i class="bi bi-chevron-left"></i></button></a>
-            <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="btn btn-secondary pageFont "> 1</button></a> 
+            <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="directions btn btn-secondary pageFont "><i class="bi bi-chevron-left"></i></button></a>
+            <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="btn btn-secondary  "> 1</button></a> 
   
-            <a href="?page={{ page_obj.number }}"><button type="button" class="btn btn-success pageFont"> 2</button></a>
-            <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="btn btn-success pageFont"> 3</button></a>
-            <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="directions btn btn-success pageFont"><i class="bi bi-chevron-right"></i></button></a>
+            <a href="?page={{ page_obj.number }}"><button type="button" class="btn btn-secondary pageFont"> 2</button></a>
+            <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="btn btn-secondary pageFont"> 3</button></a>
+            <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="directions btn btn-secondary pageFont"><i class="bi bi-chevron-right"></i></button></a>
         </span>
     </div>
 

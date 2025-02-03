@@ -1,3 +1,11 @@
+:root {
+    /* --logo-color1: #493D9E; */
+    --logo-color1: #3f367e;
+    --logo-color2: #C890A7;
+
+    /* --logo-color1: #66608f; */
+  }
+
 body{
     background-color: white;
     /* background-color: black; */
@@ -17,11 +25,12 @@ nav{
     color: grey;
 }
 .navColor:focus{
-  color:green;
+  color: var(--logo-color2);
+  /* color: var(--logo-color1); */
 }
 
 .logoImg{
-    height: 45px;
+    height: 100px;
   }
 
 
@@ -63,11 +72,11 @@ footer{
 /* Index Page */
 
 .hero{
-    margin: 0 3% 3%;
+    margin: 0 0 3% 0;
 }
 
 .carouselSize{
-    height: 800px;
+    /* height: 800px; */
 }
 
 .whatWeDO{
@@ -75,17 +84,21 @@ footer{
 }
 .whatWeDOHeading{
 margin-left: 5%;
-color: #36059B;
+color: var(--logo-color1);
 }
 
 .findTalentsDiv{
     width: max-content;
-    margin: 8% auto 4% auto;
+    /* margin: 8% auto 4% 50%; */
+}
+
+.findTalentCover{
+    margin-top: 100px;
 }
 
 .findTalents{
     /* font-size:10rem; */
-    font-size: 9vw;
+    font-size: 7vw;
     color: grey;
     line-height:0.7;
     /* line-height:6vw; */
@@ -103,12 +116,13 @@ color: #36059B;
     /* margin-bottom: 10%; */
     margin: 0 3% 10% 3%;
     background-color: #9c9e9f;
+    /* background-color: #B2A5FF; */
     /* background-color: #F1F1F1; */
 }
 
 
 .talentsImg{
-    background-color: green;
+    /* background-color: green; */
 }
 
 /* .talentsImg1{
@@ -185,10 +199,10 @@ color: #36059B;
  /* About Us */
 
  .pageHeading{
-    /* background-color: black; */
+    /* background-color: #493D9E; */
     /* background: linear-gradient(to right, black 10%, #9c9e9f 90% ); */
-    background: linear-gradient(to right, #9c9e9f 10% , black 90%); 
-    /* background: linear-gradient(to right, #493D9E  10% , #C890A7 90%);  */
+    /* background: linear-gradient(to right, #9c9e9f 10% , black 90%);  */
+    background: linear-gradient(to right, #493D9E  10% , #C890A7 90%); 
     
 
     color: white;
@@ -212,13 +226,19 @@ color: #36059B;
  }
 
  .accordion-button:not(.collapsed){
-    color: green;
+    color: var(--logo-color1) !important;
  }
 
  /* Talents */
 
 .heroSide{
-    background: linear-gradient(to bottom, black 35%, #9c9e9f 65% );
+    background-color: var(--logo-color1);
+    /* background: linear-gradient(to bottom, var(--logo-color1)  35% , var(--logo-color2) 65%);  */
+
+    /* background: linear-gradient(to bottom, black 35%, #9c9e9f 65% ); */
+    
+    /* background: linear-gradient(to right, #493D9E  10% , #C890A7 90%);  */
+
 }
 
 .verticalText{
@@ -245,7 +265,7 @@ color: #36059B;
     margin: 0 3%;
 }
 .talentCategoriesHeading{
-    margin: 5% 0 5% 0;
+    margin: 5% 0 5% 0 ;
 }
 
 
@@ -265,6 +285,7 @@ color: #36059B;
 .categoryBtn{
     /* font-size: 1.5rem; */
     margin-left: 5%;
+    background-color: var(--logo-color1) ;
     /* background-color: green;
     color: white; */
     
@@ -293,6 +314,7 @@ color: #36059B;
     /* display: flex; */
     /* justify-content: center; */
     height: 100px;
+    width: 100px;
 }
 
 .imgChangeDiv{
@@ -308,6 +330,7 @@ color: #36059B;
     display: inline-block;
     align-self: flex-end;
     /* align-self: center; */
+    /* font-weight: bold; */
     /* font-size: larger; */
 
   }
@@ -326,15 +349,18 @@ color: #36059B;
 
 .navDivider{
     height: 100px; 
-    background: linear-gradient(to right, black 10%, #9c9e9f 90% );
+    /* background: linear-gradient(to right, black 10%, #9c9e9f 90% ); */
+    background: linear-gradient(to right, var(--logo-color1)  10% , var(--logo-color2) 90%);
     color: white;
 }
 
 .dpDiv{
     background-color: grey;
+    /* background-color: var(--logo-color1); */
 }
 .profileInfo{
-    background-color: grey;
+    background-color: #9c9e9f;
+
     padding-left: 2%;
     /* padding-top: 2%; */
 }
@@ -342,7 +368,7 @@ color: #36059B;
 .detailsRule{
     width: 50px;
     border-width: 5px;
-    color: blue;
+    color: var(--logo-color1);
     /* margin-left: 5%; */
 }
 
@@ -355,6 +381,7 @@ color: #36059B;
 .infoTitle{
     font-weight: bold;
     font-size: 1.1rem;
+    /* color: var(--logo-color1); */
     
 }
 
@@ -369,7 +396,13 @@ color: #36059B;
     border: 1px solid;
 }
 
+.pageFont{
+    background-color: var(--logo-color1) !important ;
+}
 
+.pageFont :hover{
+    background-color: var(--logo-color1) !important ;
+}
 
 
 
@@ -399,13 +432,12 @@ color: #36059B;
     }
     .pageFont{
         font-size: 0.7rem;
+        background-color: var(--logo-color1) !important ;
     }
 
     .carouselSize{
         height: 400px;
     }
-
-
 
 }
 
@@ -447,6 +479,7 @@ color: #36059B;
     }
     .pageFont{
         font-size: 0.65rem;
+        background-color: var(--logo-color1) !important ;
     }
 
 

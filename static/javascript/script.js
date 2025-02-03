@@ -1,7 +1,7 @@
 
 var slideLeft = {
     distance: '100%',
-    origin: 'right',
+    origin: 'up',
     opacity: null,
     duration: '2500',
     delay:100,
@@ -19,7 +19,7 @@ var slideUp = {
 
 // let img1=document.querySelector('.reveal1')
 // ScrollReveal().reveal('.reveal2', slideLeft);
-ScrollReveal().reveal('.reveal3', slideUp);
+// ScrollReveal().reveal('.reveal3', slideLeft);
 
 
 
@@ -40,6 +40,7 @@ const sr = ScrollReveal({
 
 
   sr.reveal('.reveal1',{delay:100});
+  sr.reveal('.reveal3', {delay:100});
   
 //   window.addEventListener('load', function() {
 //   sr.reveal ('.reveal1',{delay:100});
@@ -51,15 +52,15 @@ const sr = ScrollReveal({
 // currentPage=currentPage.substring(currentPage.lastIndexOf('/'),500) //example_output= /contact-us
 var currentPage=location.href.split("/")[3]
 if(currentPage==""){
-    document.getElementById("home").style.color="green";
+    document.getElementById("home").style.color="#230dcc";
 }else if (currentPage=="about-us"){
-    document.getElementById("about-us").style.color="green";
+    document.getElementById("about-us").style.color="#230dcc";
 }else if (currentPage=="contact-us"){
-    document.getElementById("contact-us").style.color="green";
+    document.getElementById("contact-us").style.color="#230dcc";
 }else if (currentPage=="FAQs"){
-    document.getElementById("faqs").style.color="green";
+    document.getElementById("faqs").style.color="#230dcc";
 }else if (currentPage=="talents"){
-    document.getElementById("talents").style.color="green";
+    document.getElementById("talents").style.color="#230dcc";
 }
 
 

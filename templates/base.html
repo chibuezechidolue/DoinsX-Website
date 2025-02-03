@@ -16,8 +16,8 @@
 <header id="header">
     <nav class="navbar navbar-expand-md  ">
         <div class="container-fluid px-0">
-          <a class="navbar-brand navColor" href="/"><img class="logoImg" src="{% static 'images/partLogo.png'%}" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand navColor" href="/"><img class="logoImg" src="{% static 'images/FullLogo.png'%}" alt=""></a>
+          <button style="box-shadow: none;" class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -52,7 +52,10 @@
 <footer>
   
     <div class="row">
-      <div class="col-12"><img class="logoImg" src="{% static 'images/partLogo.png'%}" alt=""></div>
+      <div class="col-12">
+        Logo
+        <!-- <img class="logoImg" src="{% static 'images/partLogo.png'%}" alt=""> -->
+      </div>
       <div class="col-12 footerText">
          <span class="me-md-5  me-2"><a href="{% url 'faqs-page'%}" class="footerLink">FAQs</a> </span>
          <span class="me-md-5  me-2"><a href="{% url 'talent-categories'%}" class="footerLink">Talents</a></span> 

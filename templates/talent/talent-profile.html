@@ -4,8 +4,12 @@
 {% block content%}
 
 <section class="talentProfile">
-    <div class="navDivider">
-        <h2 class="text-center ">Talent Managed By DoinsX</h2>
+    <div class="row navDivider">
+        <div class="col-12 d-flex justify-content-center" style="display: flex; margin-top: auto; margin-bottom: auto;">
+            <div>
+        <h2 class="">Talent Managed By DoinsX</h2>
+        </div>
+    </div>
     </div>
 
     <div class="row justify-content-center my-5">
@@ -15,7 +19,7 @@
             </div>
         </div>
 
-        <div class="col-md-8 col-8 profileInfo">
+        <div class="col-md-8 col-9  profileInfo">
             <h2 class=" mb-0 ">Details</h2>
             <hr class="mt-0 detailsRule" >
             <div class="row">
@@ -26,7 +30,7 @@
                     </div>
                         <br>
                     <div class="">
-                        <h2 class="mb-0 infoTitle"> Profession </h2>
+                        <h2 class="mb-0 infoTitle"> Profession: </h2>
                         <span class="text-uppercase info">FOOTBALLER</span> 
                     </div>
                         <br>
@@ -59,11 +63,10 @@
         </div>
 
         <div class="row justify-content-center">
-        <div class="col-md-10 col-10 aboutTalen" >
+        <div class="col-md-10 col-11 aboutTalen" >
             <br>
-            <br>
-            <p class="infoTitle text-center">ABOUT STANLEY <i class="fa-solid fa-down-long"></i> </p>
-            <p class="text-center">
+            <p class="infoTitle text-center">ABOUT STANLEY <i class="fa-solid fa-down-long" style="color: var(--logo-color1);"></i> </p>
+            <p class="">
                 A short discription Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
                 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -72,17 +75,17 @@
         </div>
     </div>
 
-
-    <h3 class="whatWeDOHeading lh-1">PICTURES OF <br><span class="whatWeDOSubHeading">&nbsp&nbsp STANLEY</span></h3>
+    <br>
+    <h3 class="whatWeDOHeading lh-1 mt-2">PICTURES OF <br><span class="whatWeDOSubHeading">&nbsp&nbsp STANLEY</span></h3>
     <div class="row mb-5" >
-        <div class="col-md-8 col-12 ">
+        <div class="col-md-8 col-12 mb-md-0 mb-3">
             <img class="img-fluid float-end showImg" src="{% static 'images/home/5.jpg'%}" alt="">
         </div>
     <div class="col-md-4 col-12 mt-4   mt-auto">
         <div class="imgChangeDiv float-start">
-            <img class="me-2  imgChange" src="{% static 'images/home/3a.jpg'%}" alt="">
-            <img class="me-2 imgChange" src="{% static 'images/home/3b.jpg'%}" alt="">
-            <img class="imgChange" src="{% static 'images/home/3.jpg'%}" alt="">
+            <img class="me-2   imgChange" src="{% static 'images/home/3a.jpg'%}" alt="">
+            <img class="me-2 img-fluid imgChange" src="{% static 'images/home/3b.jpg'%}" alt="">
+            <img class="me-2 img-fluid imgChange" src="{% static 'images/home/3.jpg'%}" alt="">
         </div>
     </div>
     </div>
