@@ -31,7 +31,7 @@
             <span class="me-5 cateroryNumber">01</span><span class=" talentCaterory">Music Talents</span>
             </div>
         <div class="col-4 d-grid ">
-            <a class="btn btn-secondary categoryBtn categoryFonts" href="{% url 'talents-page' category='music' %}">View Talents</a>
+            <a class="btn btn-secondary categoryBtn categoryFonts" href="{% url 'talents-page' category='model' %}">View Talents</a>
         </div>
     </div>
         <hr>
@@ -87,15 +87,33 @@
 
         <div class="pages my-5" style="justify-content: center; display: flex;">
         <span class="step-links ">
-            <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="directions btn btn-secondary pageFont"><i class="bi bi-chevron-left"></i></button></a>
-            <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="btn btn-secondary "> 1</button></a> 
+            <a href=""><button type="button" class="directions btn btn-secondary pageFont"><i class="bi bi-chevron-left"></i></button></a>
+            <a href=""><button type="button" class="btn btn-secondary "> 1</button></a> 
   
-            <a href="?page={{ page_obj.number }}"><button type="button" class="btn btn-secondary pageFont"> 2</button></a>
-            <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="btn btn-secondary pageFont"> 3</button></a>
-            <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="directions btn btn-secondary pageFont"><i class="bi bi-chevron-right"></i></button></a>
+            <a href=""><button type="button" class="btn btn-secondary pageFont"> 2</button></a>
+            <a href=""><button type="button" class="btn btn-secondary pageFont"> 3</button></a>
+            <a href=""><button type="button" class="directions btn btn-secondary pageFont"><i class="bi bi-chevron-right"></i></button></a>
         </span>
-    </div>
+        </div>
 
+
+
+        <!-- {%if page_obj.0%}      
+        <div class="pages my-5" style="justify-content: center; display: flex;">
+          <span class="step-links">
+              {% if page_obj.has_previous %}
+              <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="directions btn btn-secondary pageFont"><i class="bi bi-chevron-left"></i></button></a>
+              <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="btn btn-secondary"> {{page_obj.previous_page_number }}</button></a> 
+              {% endif %}
+    
+              <a href="?page={{ page_obj.number }}"><button type="button" class="btn btn-secondary pageFont"> {{page_obj.number}}</button></a>
+              {% if page_obj.has_next %}
+              <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="btn btn-secondary pageFont"> {{page_obj.next_page_number }}</button></a>
+              <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="directions btn btn-secondary pageFont"><i class="bi bi-chevron-right"></i></button></a>
+              {% endif %}
+          </span>
+      </div>
+      {%endif%}  -->
 
 
     

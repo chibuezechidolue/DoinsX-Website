@@ -1,7 +1,10 @@
 db.sqlite3
 .env
 temp.txt
-/__pycache__/
+*/__pycache__/
+*/migrations/
+images/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

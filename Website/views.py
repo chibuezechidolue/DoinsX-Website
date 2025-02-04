@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.contrib import messages
+from django.core.paginator import Paginator
 from dotenv import load_dotenv
+from .models import (TalentCategories,Talent,Advertisement) 
 import os
 
 load_dotenv()
@@ -9,7 +11,8 @@ load_dotenv()
 
 
 def home(request):
-    return render(request,"index.html")
+    adverts=Advertisement.objects.all()
+    return render(request,"index.html",{"adverts":adverts})
 
 
 def about_us(request):
@@ -36,11 +39,24 @@ def faq(request):
     return render(request,"faq.html")
 
 def talent_category(request):
-    return render(request,"talent/talent-categories.html")
+    talent_category=TalentCategories.objects.all().order_by("id")
+
+    paginator = Paginator(talent_category, 5)  # Show 5 products per page.
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request,"talent/talent-categories.html",{"page_obj":page_obj,})
 
 def talents(request,category):
-    print(category)
-    return render(request,"talent/talents.html",{"category":category})
+    current_category=TalentCategories.objects.get(category_title=category.title())
+    talents= Talent.objects.filter(category_id=current_category.id).order_by("id")
 
-def talent_profile(request,talent_name):
-    return render(request,"talent/talent-profile.html", {"name":talent_name})
+    paginator = Paginator(talents, 6)  # Show 6 products per page.
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    print(page_obj[0].first_name)
+    return render(request,"talent/talents.html",{"page_obj":page_obj,})
+
+def talent_profile(request,talent_id):
+    talent= Talent.objects.get(id=talent_id)
+    print(talent.last_name)
+    return render(request,"talent/talent-profile.html", {"talent":talent})

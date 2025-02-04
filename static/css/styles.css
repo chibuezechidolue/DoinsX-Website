@@ -404,7 +404,9 @@ color: var(--logo-color1);
     background-color: var(--logo-color1) !important ;
 }
 
-
+.currentPage {
+    background-color: grey !important;
+}
 
 
 /* @media only screen and (min-width: 768px max-width: 992) { */

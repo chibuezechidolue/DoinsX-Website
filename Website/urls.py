@@ -9,6 +9,6 @@ path("contact-us/", views.contact_us, name='contact-page'),
 path("FAQs/", views.faq, name='faqs-page'),
 path("talents/categories/", views.talent_category, name='talent-categories'),
 path("talents/category/<str:category>/", views.talents, name='talents-page'),
-path("talent/profile/<str:talent_name>/", views.talent_profile, name='talent-profile'),
+path("talent/profile/<str:talent_id>/", views.talent_profile, name='talent-profile'),
 
 ]
