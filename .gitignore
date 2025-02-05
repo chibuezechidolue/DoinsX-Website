@@ -4,6 +4,7 @@ temp.txt
 */__pycache__/
 */migrations/
 images/
+media/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
