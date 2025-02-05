@@ -54,7 +54,7 @@ def talents(request,category):
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
     print(page_obj[0].first_name)
-    return render(request,"talent/talents.html",{"page_obj":page_obj,})
+    return render(request,"talent/talents.html",{"page_obj":page_obj,"category_img":current_category.category_img})
 
 def talent_profile(request,talent_id):
     talent= Talent.objects.get(id=talent_id)

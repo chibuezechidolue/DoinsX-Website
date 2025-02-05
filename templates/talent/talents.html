@@ -5,7 +5,7 @@
 
 <section class="talentCategories">
         <div class="">
-            <img class="img-fluid " src="{% static 'images/home/3.jpg'%}" alt="hero image">
+            <img class="img-fluid " src="{{category_img.url}}" alt="hero image">
         </div>
 
     <div class=" mb-5 talentCategoriesHeading">
@@ -13,19 +13,23 @@
         <p class="text-center lh-1">THE TALENTS MANAGED BY US IS MAINLY DIVIDED INTO THESE GENRE OF TALENTS </p>
       </div>
 
-
+      {% for talent in page_obj%}
         <div class="row ">
             <div class="col-4 px-0 talentDiv talentFonts">
-            <span class="talentName my-auto text-uppercase">STANLEY CHIDOLUE</span>
+            <span class="talentName my-auto text-uppercase">{{talent.first_name}} {{talent.last_name}}</span>
             </div>
             <div class="col-4  talentDiv">
-            <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
+            <img class="" src="{{talent.display_pic.url}}" alt="talent image">
             </div>
             <div class="col-4 talentDiv">
-                <a class="btn btn-secondary categoryBtn talentBtn talentFonts  my-auto" href="{% url 'talent-profile' talent_id=page_obj.0.id %}">View Profile</a>
+                <a class="btn btn-secondary categoryBtn talentBtn talentFonts  my-auto" href="{% url 'talent-profile' talent_id=talent.id %}">View Profile</a>
             </div>
         </div>
         <hr>
+        {%endfor%}
+
+
+
 
         <div class="row talentFonts">
             <div class="col-4 px-0 talentDiv">
@@ -52,6 +56,8 @@
             </div>
         </div>
         <hr>
+
+
 
         
         <!-- Temporary code, to be replaced by actual pagination -->
