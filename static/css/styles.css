@@ -1,4 +1,24 @@
+/* Pulse animation button */
+@import url("https://unpkg.com/open-props@1.6.17/easings.min.css");
+
+
+@keyframes pulse {
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  [anim="pulse"]:not(.toggled) {
+    animation: pulse var(--ease-elastic-in-1) 1400ms infinite alternate;
+  }
+/* end of Pulse animation button */
+  
+
+
+
+
 :root {
+    --black: hsl(0, 0%, 13%);
+    --dark: hsl(12, 32%, 2%);
     /* --logo-color1: #493D9E; */
     --logo-color1: #3f367e;
     --logo-color2: #C890A7;
@@ -8,8 +28,10 @@
 
 body{
     background-color: white;
+    /* background-color: var(--black); */
     /* background-color: black; */
 }
+
 
 /* Header */
 nav{
@@ -112,9 +134,9 @@ color: var(--logo-color1);
 }
 
 .talents{
-    padding: 5% 13%;
+    padding: 5% 13% 2% 13%;
     /* margin-bottom: 10%; */
-    margin: 0 3% 10% 3%;
+    margin: 10% 3% 7% 3%;
     background-color: #9c9e9f;
     /* background-color: #B2A5FF; */
     /* background-color: #F1F1F1; */
@@ -232,8 +254,8 @@ color: var(--logo-color1);
  /* Talents */
 
 .heroSide{
-    background-color: var(--logo-color1);
-    /* background: linear-gradient(to bottom, var(--logo-color1)  35% , var(--logo-color2) 65%);  */
+    /* background-color: var(--logo-color1); */
+    background: linear-gradient(to bottom, var(--logo-color1)  35% , var(--logo-color2) 65%); 
 
     /* background: linear-gradient(to bottom, black 35%, #9c9e9f 65% ); */
     
@@ -246,13 +268,9 @@ color: var(--logo-color1);
     text-orientation: upright;
     /* text-align: center; */
     color: white;
-    font-size: 3rem;    
+    font-size: 3rem;
+    margin: 0 auto 0 auto;    
     
-    /* vertical-align:text-bottom; */
-    
-    /* display: block; */
-    /* position: relative; */
-    /* padding: auto; */
 }
 
 .letterSpacing{
@@ -299,8 +317,14 @@ color: var(--logo-color1);
     display: flex;
     justify-content: center;
     height: 100px;
-    
 }
+
+.talentDiv1 {
+    display: flex;
+    /* justify-content: center; */
+    height: 100px;
+}
+
 
 .talentDP {
     display: flex;
@@ -489,5 +513,16 @@ color: var(--logo-color1);
         height: 300px;
     }
 
+    .info{
+        font-size: 0.8rem;
+    }
+
 
 }
+
+
+
+
+
+
+/* gsdfyt jopk[\s[lca9 iurfyzGCHXXXXXXXXXXXXXXGHJUuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */

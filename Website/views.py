@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.core.paginator import Paginator
 from dotenv import load_dotenv
 from .models import (TalentCategories,Talent,Advertisement) 
+import random
 import os
 
 load_dotenv()
@@ -12,7 +13,9 @@ load_dotenv()
 
 def home(request):
     adverts=Advertisement.objects.all()
-    return render(request,"index.html",{"adverts":adverts})
+    talents=list(Talent.objects.all())
+    random.shuffle(talents)
+    return render(request,"index.html",{"adverts":adverts,"talents":talents[:4]})
 
 
 def about_us(request):
@@ -58,5 +61,4 @@ def talents(request,category):
 
 def talent_profile(request,talent_id):
     talent= Talent.objects.get(id=talent_id)
-    print(talent.last_name)
     return render(request,"talent/talent-profile.html", {"talent":talent})

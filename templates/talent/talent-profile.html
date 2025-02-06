@@ -15,7 +15,7 @@
     <div class="row justify-content-center my-5">
         <div class="col-md-1 col-2 me-2 px-0  dpDiv ">
             <div class="talentDP">
-                <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
+                <img class="" src="{{talent.display_pic.url}}" alt="">
             </div>
         </div>
 
@@ -26,34 +26,34 @@
                 <div class="col-6">
                     <div class="">
                         <h2 class="mb-0 infoTitle">First Name: </h2>
-                        <span class="text-uppercase info">STANLEY</span> 
+                        <span class="text-uppercase info">{{talent.first_name}}</span> 
                     </div>
                         <br>
                     <div class="">
                         <h2 class="mb-0 infoTitle"> Profession: </h2>
-                        <span class="text-uppercase info">FOOTBALLER</span> 
+                        <span class="text-uppercase info">{{talent.profession}}</span> 
                     </div>
                         <br>
                     <div class="">
-                        <h2 class="mb-0 infoTitle">First Name: </h2>
-                        <span class="text-uppercase info">STANLEY</span> 
+                        <h2 class="mb-0 infoTitle">Stage Name: </h2>
+                        <span class="text-uppercase info">{{talent.stage_name}}</span> 
                     </div>
                     
                 </div>
                 <div class="col-6">
                     <div class="">
                         <h2 class="mb-0 infoTitle">Last Name: </h2>
-                        <span class="text-uppercase info">CHIDOLUE</span> 
+                        <span class="text-uppercase info">{{talent.last_name}}</span> 
                     </div>
                         <br>
                     <div class="">
                         <h2 class=" mb-0 infoTitle">Gender: </h2>
-                        <span class="text-uppercase info">MALE</span> 
+                        <span class="text-uppercase info">{{talent.gender}}</span> 
                     </div>
                         <br>
                     <div class="">
                         <h2 class="mb-0 infoTitle">Height: </h2>
-                        <span class="text-uppercase info">6.2ft</span> 
+                        <span class="text-uppercase info">{{talent.height}}</span> 
                     </div>
                 </div>
             </div>
@@ -65,8 +65,10 @@
         <div class="row justify-content-center">
         <div class="col-md-10 col-11 aboutTalen" >
             <br>
-            <p class="infoTitle text-center">ABOUT STANLEY <i class="fa-solid fa-down-long" style="color: var(--logo-color1);"></i> </p>
+            <p class="infoTitle text-center text-uppercase">ABOUT {{talent.first_name}} <i class="fa-solid fa-down-long" style="color: var(--logo-color1);"></i> </p>
             <p class="">
+                {{talent.about}}
+
                 A short discription Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
                 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -76,18 +78,25 @@
     </div>
 
     <br>
-    <h3 class="whatWeDOHeading lh-1 mt-2">PICTURES OF <br><span class="whatWeDOSubHeading">&nbsp&nbsp STANLEY</span></h3>
-    <div class="row mb-5" >
+    <h3 class="whatWeDOHeading lh-1 mt-2">PICTURES OF <br><span class="whatWeDOSubHeading text-uppercase">&nbsp&nbsp {{talent.first_name}}</span></h3>
+    <div class="row mb-5 justify-content-center"  >
         <div class="col-md-8 col-12 mb-md-0 mb-3">
-            <img class="img-fluid float-end showImg" src="{% static 'images/home/5.jpg'%}" alt="">
+            <img class="img-fluid float-end showImg" src="{{talent.image1.url}}" alt="">
         </div>
-    <div class="col-md-4 col-12 mt-4   mt-auto">
+
+
+        {%if talent.image2 %}
+        <div class="col-md-4 col-12 mt-4   mt-auto">
         <div class="imgChangeDiv float-start">
-            <img class="me-2   imgChange" src="{% static 'images/home/3a.jpg'%}" alt="">
-            <img class="me-2 img-fluid imgChange" src="{% static 'images/home/3b.jpg'%}" alt="">
-            <img class="me-2 img-fluid imgChange" src="{% static 'images/home/3.jpg'%}" alt="">
+            <img class="me-2   imgChange" src="{{talent.image1.url}}" alt="{{talent.first_name}}'s first img">
+            <img class="me-2 img-fluid imgChange" src="{{talent.image2.url}}" alt="{{talent.first_name}}'s second img">
+        {%endif%}
+        {%if talent.image3 %}   
+            <img class="me-2 img-fluid imgChange" src="{{talent.image3.url}}" alt="{{talent.first_name}}'s third img">
+        {%endif%}
         </div>
-    </div>
+        </div>
+
     </div>
     
 

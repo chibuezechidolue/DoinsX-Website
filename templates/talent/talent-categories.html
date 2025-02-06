@@ -4,15 +4,14 @@
 {% block content%}
 
 <section class="talentCategories">
-    
     <div class="row justify-content-center">
-        <div class="col-2 heroSide">
+        <div class="col-2 my-auto heroSide ">
             <h1 class="verticalText letterSpacing">DOINX</h1>
         </div>
         <div class="col-8">
             <img class="w-100 talentImage" src="{% static 'images/talent/1.jpg'%}" alt="hero image">
         </div>
-        <div class="col-2 heroSide">
+        <div class="col-2 my-auto heroSide">
             <h1 class="verticalText">TALENTS</h1>
         </div>
     </div>
@@ -29,7 +28,14 @@
     {% for category in page_obj%}
     <div class="row categoryFonts" >
             <div class="col-8 my-auto">
-            <span class="me-5 cateroryNumber">{{ forloop.counter }}</span><span class=" talentCaterory">{{category.category_title}} Talents</span>
+                <!-- {{forloop.counter|stringformat:"s"|length|add:"-1"}} -->
+            <span class="me-5 cateroryNumber">
+                {%if forloop.counter|stringformat:"s"|length == 1 %}0{%endif%}{{forloop.counter}}
+            </span>
+            
+            <span class=" talentCaterory">
+                {{category.category_title}} Talents
+            </span>
             </div>
         <div class="col-4 d-grid ">
             <a class="btn btn-secondary categoryBtn categoryFonts" href="{% url 'talents-page' category=category.category_title %}">View Talents</a>
@@ -42,7 +48,7 @@
 
 
 
-    <div class="row categoryFonts">
+    <!-- <div class="row categoryFonts">
         <div class="col-8 my-auto">
         <span class="me-5 cateroryNumber">2</span><span class=" talentCaterory">Football Talents</span>
         </div>
@@ -50,12 +56,12 @@
             <button class="btn btn-secondary categoryBtn categoryFonts">View Talents</button>
         </div>
     </div>
-    <hr>
+    <hr> -->
 
     <div class="row categoryFonts">
         <div class="col-8 my-auto">
 
-        <span class="me-5 cateroryNumber">3</span><span class=" talentCaterory">Model Talents</span>
+        <span class="me-5 cateroryNumber">03</span><span class=" talentCaterory">Model Talents</span>
         </div>
         <div class="col-4 d-grid">
             <button class="btn btn-secondary categoryBtn categoryFonts">View Talents</button>
@@ -65,7 +71,7 @@
 
     <div class="row categoryFonts">
         <div class="col-8 my-auto">
-        <span class="me-5 cateroryNumber">4</span><span class=" talentCaterory">Music Talents</span>
+        <span class="me-5 cateroryNumber">04</span><span class=" talentCaterory">Music Talents</span>
         </div>
         <div class="col-4 d-grid">
             <button class="btn btn-secondary categoryBtn categoryFonts">View Talents</button>
@@ -75,7 +81,7 @@
     <div class="row categoryFonts">
         <div class="col-8 my-auto">
 
-        <span class="me-5 cateroryNumber">5</span><span class=" talentCaterory">Music Talents</span>
+        <span class="me-5 cateroryNumber">05</span><span class=" talentCaterory">Music Talents</span>
         </div>
         <div class="col-4 d-grid">
             <button class="btn btn-secondary categoryBtn categoryFonts">View Talents</button>

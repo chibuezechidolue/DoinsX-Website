@@ -34,7 +34,7 @@ class CustomTalentFilter(admin.SimpleListFilter):
 
 
 class CustomTalent(admin.ModelAdmin):
-    list_display=("category","stage_name","gender")
+    list_display=(Talent.name,"category","stage_name","gender")
     list_filter=("gender",CustomTalentFilter)
     list_per_page=10
 

@@ -19,15 +19,20 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner ">
+            {%for ads in advert%}
+            {%if ads == carousel.first%}
           <div class="carousel-item active" data-bs-interval="5000">
-            <img src="static/images/home/1.png" class="d-block w-100 carouselSize" alt="carousel image">
+            <img src="{{ads.}}" class="d-block w-100 carouselSize" alt="carousel image">
           </div>
+          {%else%}
           <div class="carousel-item" data-bs-interval="5000">
             <img src="static/images/home/1.png" class="d-block w-100 carouselSize" alt="carousel image">
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
+          {%endif%}
+          <!-- <div class="carousel-item" data-bs-interval="5000">
             <img src="static/images/home/1.png" class="d-block w-100 carouselSize" alt="carousel image">
-          </div>
+          </div> -->
+          {%endfor%}
         </div>
         <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> -->
           <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -145,41 +150,35 @@
 
 <section class="talents">
     <div class="row talentDiscription">
+
+        {%for talent in talents%}
         <div class="col-3 ps-1 pe-1">
             <div class="talentsImg">
-            <img class="w-100 talentsImg1" src="static/images/home/DP.jpg" alt="hero image">
+            <img class="w-100 talentsImg1" src="{{talent.display_pic.url}}" alt="hero image">
             </div>
             <div class="">
-            <p class="mb-0 text-uppercase"><span class=""> Stanley Chidolue</span></p>
-            <p class="mb-0 text-capitalize"><span> Programmer</span></p>
-            <p class="mb-0 text-capitalize"> <span> nigeria</span></p>
+            <p class="mb-0 text-uppercase"><span class="">{{talent.first_name}} {{talent.last_name}}</span></p>
+            <p class="mb-0 text-capitalize"><span> {{talent.profession}}</span></p>
+            <p class="mb-0 text-capitalize"> <span> {{talent.gender}} </span></p>
             </div>
-            
         </div>
-        <div class="col-3 ps-1 pe-1">
-            <img class="w-100 talentsImg2" src="static/images/home/DP.jpg" alt="hero image">
-            <p class="mb-0 text-uppercase"><span> Chidera Orji</span></p>
-            <p class="mb-0 text-capitalize"><span> Footballer </span></p>
-            <p class="mb-0 text-capitalize"><span> Nigerian</span></p>
-        </div>
-        <div class="col-3 ps-1 pe-1">
-            <img class="w-100  talentsImg3" src="static/images/home/DP.jpg" alt="hero image">
-            <p class="mb-0 text-uppercase"><span> Somtochukwu DoinsX</span></p>
-            <p class="mb-0 text-capitalize"><span> Muscian</span></p>
-            <p class="mb-0 text-capitalize"> <span> Ghana</span></p>
-        </div>
+        {%endfor%}
+
+
         <div class="col-3 ps-1 pe-1">
             <img class="w-100   talentsImg4" src="static/images/home/DP.jpg" alt="hero image">
             <p class="mb-0 text-uppercase"><span> Jennifer Ozor</span></p>
             <p class="mb-0 text-capitalize"><span> Model</span></p>
-            <p class="mb-0 text-capitalize"><span> Nigeria</span></p>
+            <p class="mb-0 text-capitalize"><span> FEMALE</span></p>
         </div>
 
-    <!-- </div>
-    <div  class="d-flex justify-content-end pt-5">
-    <a href="{% url 'talent-categories'%}" class="btn btn-secondary categoryBtn  " type="button">View Talents</a>
-    </div> -->
+    </div>
+    <div  class="d-flex justify-content-center mt-2 ">
+    <a href="{% url 'talent-categories'%}" anim="pulse" class="btn btn-secondary btn-sm ms-0 talentDiscription" type="button">VIEW TALENTS</a>
+    </div>
 </div>
+  
+
 </section>
 
 {% endblock content%}
