@@ -46,8 +46,8 @@ nav{
 .navColor:hover{
     color: grey;
 }
-.navColor:focus{
-  color: var(--logo-color2);
+.navColor:focus{ver
+  color: grey;
   /* color: var(--logo-color1); */
 }
 
@@ -273,8 +273,12 @@ color: var(--logo-color1);
     
 }
 
+.horizontalText{
+ font-size: 8rem;
+}
+
 .letterSpacing{
-    letter-spacing: 22px;
+    letter-spacing: 10px;
 }
 
 /* Talent Categories */
@@ -448,7 +452,7 @@ color: var(--logo-color1);
     }.verticalText{
         font-size: 2rem;
     }.letterSpacing{
-        letter-spacing: 15px;
+        letter-spacing: 6px;
     }
     .categoryFonts{
         font-size: 1rem;
@@ -493,7 +497,7 @@ color: var(--logo-color1);
     }.verticalText{
         font-size: 1rem;
     }.letterSpacing{
-        letter-spacing: 10px;
+        letter-spacing: 3.5px;
     }
 
     .categoryFonts{

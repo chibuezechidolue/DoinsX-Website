@@ -25,7 +25,7 @@ class Talent(models.Model):
         ('FEMALE', u'FEMALE'),
     ),null=False)
     stage_name=models.CharField(max_length=200,null=True, blank=True)
-    height=models.CharField(max_length=20,null=True, blank=True)
+    mantra=models.CharField(max_length=300,null=True, blank=True)
     about=models.TextField()
     image1=models.FileField(upload_to=f"images/talents",default="images/talents/talent-default.jpg",null=False)
     image2=models.FileField(upload_to=f"images/talents",null=True, blank=True)
@@ -41,11 +41,8 @@ class Talent(models.Model):
     
 
 class Advertisement(models.Model):
-    image1=models.FileField(upload_to=f"images/advert",default="images/advert/advert-default.jpg",null=False)
-    image2=models.FileField(upload_to=f"images/advert",null=True, blank=True)
-    image3=models.FileField(upload_to=f"images/advert",null=True, blank=True)
-    image4=models.FileField(upload_to=f"images/advert",null=True, blank=True)
-    image5=models.FileField(upload_to=f"images/advert",null=True, blank=True)
+    advert_title= models.CharField(max_length=200,default="No Title")
+    image=models.FileField(upload_to=f"images/advert",default="images/advert/advert-default.jpg",null=False)
 
     def __str__(self):
-	    return "Advertisement"
+	    return self.advert_title
