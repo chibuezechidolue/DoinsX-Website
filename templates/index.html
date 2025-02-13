@@ -106,37 +106,39 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="rectangleShape"></div>
-            <h4 class="affirmationsHeading"> Our Success and Performance Speaks <br>The Loudest</h4>
+            <!-- <h4 class="affirmationsHeading"> Our Success and Performance Speaks <br>The Loudest</h4>
             <p>
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
                 alteration in some form, by injected humour, or randomised words which don't look even slightly
                 believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
-            </p>
+            </p> -->
+
+
+            <p class="text-center lh-1 quote1">❝Talent opens doors, but character, hard work, and consistency keep them open.❞</p>
         </div>
     </div>
     <br>
     <div class="row justify-content-center">
         <div class="col-md-4 col-6 ps-0">
             <div class="circleShape"></div>
-            <h6 class="affirmationsHeading"> Our Success and Performance The Loudes</h4>
+            <!-- <h6 class="affirmationsHeading"> Our Success and Performance The Loudes</h4>
             <p class="small text-center">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
-            </p>
+            </p> -->
+
+            <p class="text-center lh-1 quote2" >❝Your talent is a gift, but what you do with it is your responsibility.❞</p>
+
         </div>
         <div class="col-md-4 col-6 ps-0">
             <div class="circleShape"></div>
-            <h6 class="affirmationsHeading"> Our Success and Performance Speaks The Loudes</h4>
+            <!-- <h6 class="affirmationsHeading"> Our Success and Performance Speaks The Loudes</h4>
             <p class="small text-center">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
-            </p>
+            </p> -->
+
+            <p class="text-center lh-1 quote2"> ❝Your journey is unique don’t rush it, don’t compare it, just trust it.❞</p>
         </div>
-        <!-- <div class="col-md-4 col-6">
-            <div class="circleShape"></div>
-            <h6 class="affirmationsHeading"> Our Success and Performance Speaks The Loudes</h4>
-            <p class="small text-center">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
-            </p>
-        </div> -->
+    
         
     </div>
 </section>
@@ -154,7 +156,7 @@
         {%for talent in talents%}
         <div class="col-3 ps-1 pe-1">
             <div class="talentsImg">
-            <img class="w-100 talentsImg1" src="{{talent.display_pic.url}}" alt="hero image">
+            <img class="w-100 talentsImg1" src="{{talent.display_pic.url}}" alt="a talent image">
             </div>
             <div class="">
             <p class="mb-0 text-uppercase"><span class="">{{talent.first_name}} {{talent.last_name}}</span></p>
@@ -163,14 +165,6 @@
             </div>
         </div>
         {%endfor%}
-
-
-        <div class="col-3 ps-1 pe-1">
-            <img class="w-100   talentsImg4" src="static/images/home/DP.jpg" alt="hero image">
-            <p class="mb-0 text-uppercase"><span> Jennifer Ozor</span></p>
-            <p class="mb-0 text-capitalize"><span> Model</span></p>
-            <p class="mb-0 text-capitalize"><span> FEMALE</span></p>
-        </div>
 
     </div>
     <div  class="d-flex justify-content-center mt-2 ">

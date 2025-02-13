@@ -31,8 +31,8 @@ def contact_us(request):
         send_mail(
                 subject='Message from DoinsXtmc Website',
                 message=f"Name: {name}\nEmail: {email}\nPhone no: {phone}\nMessage: {message}",   
-                from_email=None,
-                recipient_list=[os.environ.get('EMAIL_USERNAME'),],  
+                from_email=os.environ.get('EMAIL_USERNAME'),
+                recipient_list=[os.environ.get('RECIPIENT_EMAIL'),],  
             )
         messages.add_message(request, messages.SUCCESS, "Your message was sent successfully")
         return redirect('home-page')

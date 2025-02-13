@@ -52,7 +52,7 @@ nav{
 }
 
 .logoImg{
-    height: 100px;
+    height: 50px;
   }
 
 
@@ -115,7 +115,7 @@ color: var(--logo-color1);
 }
 
 .findTalentCover{
-    margin-top: 100px;
+    margin-top: 10%;
 }
 
 .findTalents{
@@ -238,9 +238,10 @@ color: var(--logo-color1);
  }
 
 /* FAQS */
-/* .faqHeading{
-    background-color: grey;
-} */
+.faqHeading{
+    /* background-color: grey; */
+    margin-top: 5%;
+}
 
 .accordionBtn{
     font-size: 1.5rem;
@@ -437,6 +438,15 @@ color: var(--logo-color1);
 }
 
 
+
+.quote1{
+    font-size: 2rem;
+}.quote2{
+    font-size: 1.5rem;
+}
+
+
+
 /* @media only screen and (min-width: 768px max-width: 992) { */
 
 @media (min-width: 768px) and (max-width: 1120px) {
@@ -522,6 +532,11 @@ color: var(--logo-color1);
     }
 
 
+    .quote1{
+        font-size: 1.2rem;
+    }.quote2{
+        font-size: 0.8rem;
+    }
 }
 
 
@@ -530,3 +545,4 @@ color: var(--logo-color1);
 
 
 /* gsdfyt jopk[\s[lca9 iurfyzGCHXXXXXXXXXXXXXXGHJUuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
+
