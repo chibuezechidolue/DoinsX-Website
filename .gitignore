@@ -3,7 +3,6 @@ db.sqlite3
 temp.txt
 */__pycache__/
 */migrations/
-images/
 media/
 
 # Byte-compiled / optimized / DLL files

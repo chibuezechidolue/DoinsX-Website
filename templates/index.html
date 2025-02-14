@@ -1,5 +1,6 @@
 <!-- #493D9E #FCC6FF -->
 {% extends "base.html" %}
+{% load static%}
 {%block title%} Home @DoinsX {%endblock title%}
 <body>
 {% block content%}
@@ -29,28 +30,10 @@
             <img src="{{advert.image.url}}" class="d-block w-100 carouselSize" alt="carousel image">
           </div>
           {%endif%}
-          <!-- <div class="carousel-item" data-bs-interval="5000">
-            <img src="static/images/home/1.png" class="d-block w-100 carouselSize" alt="carousel image">
-          </div> -->
           {%endfor%}
         </div>
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> -->
-          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span> -->
-          <!-- <i class="bi bi-arrow-right-circle-fill" style="color: #5fcf80; font-size: 4rem;"></i> -->
-          <!-- <i class="bi bi-arrow-left-circle-fill" style="color: #5fcf80; font-size: 5vw;"></i> -->
-        <!-- </button> -->
-        <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> -->
-          <!-- <span class="carousel-control-next-icon" style="color: #5fcf80 !important; font-size: 10rem;" aria-hidden="true"></span> -->
-          <!-- <span class="visually-hidden">Next</span> -->
-          <!-- <i class="bi bi-arrow-right-circle-fill" style="color: #5fcf80; font-size: 5vw;"></i> -->
-        <!-- </button> -->
       </div>
     
-    
-    <!-- <div class="">
-        <img class="w-100" src="static/images/home/1.png" alt="hero image">
-    </div> -->
 </section>
 
 <section class="whatWeDO">
@@ -67,7 +50,7 @@
     
     </div>
     <div class="col-6">
-    <img class="mx-auto d-block img-fluid" src="static/images/home/6a.png" alt="">       
+    <img class="mx-auto d-block img-fluid" src="{% static 'images/home/2.png' %}" alt="">       
     </div>
     </div>
 
@@ -91,13 +74,13 @@
 <section class="activities">
     <div class="row justify-content-center">
         <div class="col-6 ps-1 pe-1 ">
-            <img class="w-100 homeImg reveal1" src="static/images/home/3.jpg" alt="hero image">
+            <img class="w-100 homeImg reveal1" src="{% static 'images/home/3.jpg' %}" alt="hero image">
         </div>
         <div class="col-3 ps-1 pe-1">
-            <img class="w-100 homeImg " src="static/images/home/4aa.jpg" alt="hero image">
+            <img class="w-100 homeImg " src="{% static 'images/home/4.jpg' %}" alt="hero image">
         </div>
         <div class="col-3 ps-1 pe-1">
-            <img class="w-100 homeImg reveal3" src="static/images/home/5.jpg" alt="hero image">
+            <img class="w-100 homeImg reveal3" src="{% static 'images/home/5.jpg' %}" alt="hero image">
         </div>
     </div>
 </section>
@@ -143,8 +126,8 @@
     </div>
 </section>
 
-<section class="group mb-5 mx-3 reveal1">
-        <img class="w-100 " src="static/images/home/group.jpg" alt="">
+<section class="group mb-5 mx-3 reveal1">{% static 'images/home/group.JPG' %}
+        <img class="w-100 " src="{% static 'images/home/group.JPG' %}" alt="">
         <p class="text-center">
             FIFA Nigerian Tour 2023
         </p>

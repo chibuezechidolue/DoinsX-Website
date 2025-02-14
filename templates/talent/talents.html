@@ -31,37 +31,9 @@
 
 
 
-        <div class="row talentFonts">
-            <div class="col-4 px-0 talentDiv">
-            <span class=" my-auto talentName text-uppercase ">Stanley Chidolue</span>
-            </div>
-            <div class="col-4  talentDiv">
-            <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
-            </div>
-            <div class="col-4 talentDiv">
-                <a class="btn btn-secondary my-auto categoryBtn talentBtn talentFonts " href="{ url 'talent-profile' name='music' %}">View Profile</a>
-            </div>
-        </div>
-        <hr>
-
-        <div class="row talentFonts">
-            <div class="col-4 px-0 talentDiv">
-            <span class=" my-auto talentName text-uppercase">Stanley Chidolue</span>
-            </div>
-            <div class="col-4  talentDiv">
-            <img class="" src="{% static 'images/home/DP.jpg'%}" alt="">
-            </div>
-            <div class="col-4 talentDiv">
-                <a class="btn btn-secondary my-auto categoryBtn talentBtn talentFonts " href="{ url 'talent-profile' name='music' %}">View Profile</a>
-            </div>
-        </div>
-        <hr>
-
-
-
         
         <!-- Temporary code, to be replaced by actual pagination -->
-
+<!-- 
         <div class="my-5" style="justify-content: center; display: flex;" >
         <div class="pages" >
         <span class="step-links  ">
@@ -73,11 +45,11 @@
             <a href=""><button type="button" class="directions btn btn-secondary pageFont"><i class="bi bi-chevron-right"></i></button></a>
         </span>
         </div>
-        </div>
+        </div> -->
 
     
 
-        <!-- {%if page_obj.0%}      
+        {%if page_obj.0%}      
         <div class="pages my-5" style="justify-content: center; display: flex;">
           <span class="step-links">
               {% if page_obj.has_previous %}
@@ -92,7 +64,7 @@
               {% endif %}
           </span>
       </div>
-      {%endif%}  -->
+      {%endif%} 
 
 
 </section>
