@@ -50,13 +50,12 @@ def talent_category(request):
     return render(request,"talent/talent-categories.html",{"page_obj":page_obj,})
 
 def talents(request,category):
-    current_category=TalentCategories.objects.get(category_title=category.title())
+    current_category=TalentCategories.objects.get(category_title=category)
     talents= Talent.objects.filter(category_id=current_category.id).order_by("id")
 
     paginator = Paginator(talents, 6)  # Show 6 products per page.
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
-    print(page_obj[0].first_name)
     return render(request,"talent/talents.html",{"page_obj":page_obj,"category_img":current_category.category_img})
 
 def talent_profile(request,talent_id):
