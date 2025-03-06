@@ -154,7 +154,7 @@
 
 <section class="group mb-5 mx-3 reveal1">
         <img class="w-100 " src="{% static 'images/home/group.JPG' %}" alt="">
-        <p class="text-center">
+        <p class="text-center lh-1">
             Supreme Kings FA Scouting Program, Nassarawa State, 2023
         </p>
 </section>
@@ -165,7 +165,7 @@
         {%for talent in talents%}
         <div class="col-3 ps-1 pe-1">
             <div class="talentsImg">
-            <img class="w-100 talentsImg1" src="{{talent.display_pic.url}}" alt="a talent image">
+            <img class="w-100 talentsImg" src="{{talent.display_pic.url}}" alt="a talent image">
             </div>
             <div class="">
             <p class="mb-0 text-uppercase"><span class="">{{talent.first_name}} {{talent.last_name}}</span></p>
@@ -181,11 +181,6 @@
     </div>
 </div>
   
-
-
-
-
-
 
 </section>
 

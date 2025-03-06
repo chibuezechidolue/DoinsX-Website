@@ -98,7 +98,7 @@ footer{
 }
 
 .carouselSize{
-    /* height: 800px; */
+    height: 700px;
 }
 
 .whatWeDO{
@@ -143,12 +143,9 @@ color: var(--logo-color1);
 }
 
 
-.talentsImg{
-    /* background-color: green; */
-}
 
-/* .talentsImg1{
-    transform: rotate(3deg)
+/* .talentsImg{
+    height: 200px;  
 } */
 /* .talentsImg2{
     transform: rotate(357deg)
