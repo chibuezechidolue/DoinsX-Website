@@ -61,3 +61,4 @@ def talents(request,category):
 def talent_profile(request,talent_id):
     talent= Talent.objects.get(id=talent_id)
     return render(request,"talent/talent-profile.html", {"talent":talent})
+    

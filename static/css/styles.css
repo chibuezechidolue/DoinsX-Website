@@ -127,7 +127,7 @@ color: var(--logo-color1);
 }
 
 .activities{
-    margin: 3% 2%;
+    margin: 40px 2%;
 }
 .homeImg{
     height: 400px;
@@ -144,17 +144,11 @@ color: var(--logo-color1);
 
 
 
-/* .talentsImg{
-    height: 200px;  
-} */
-/* .talentsImg2{
-    transform: rotate(357deg)
-} */
-/* .talentsImg3{
-    transform: rotate(2deg)
-} */
-/* .talentsImg4{
-    transform: rotate(358deg)
+.talentsImg{
+    height: 15vw;  
+}
+/* .showImg{
+    height: 40vw;
 } */
  .affirmations{
     margin: 8% 3% 8% 3%;
@@ -471,6 +465,9 @@ color: var(--logo-color1);
         font-size: 0.7rem;
         background-color: var(--logo-color1) !important ;
     }
+    .currentPage {
+        background-color: grey !important;
+    }
 
     .carouselSize{
         height: 400px;
@@ -518,7 +515,9 @@ color: var(--logo-color1);
         font-size: 0.65rem;
         background-color: var(--logo-color1) !important ;
     }
-
+    .currentPage {
+        background-color: grey !important;
+    }
 
     .carouselSize{
         height: 300px;

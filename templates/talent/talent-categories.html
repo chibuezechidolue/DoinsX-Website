@@ -33,8 +33,8 @@
             <div class="col-8 my-auto">
                 <!-- {{forloop.counter|stringformat:"s"|length|add:"-1"}} -->
             <span class="me-5 cateroryNumber">
-                {%if forloop.counter|stringformat:"s"|length == 1 %}0{%endif%}{{forloop.counter}}
-            </span>
+               <!-- {% widthratio page_obj.number 1 page_obj.number % -->
+                {%if category.id|stringformat:"s"|length == 1 %}0{%endif%}{{category.pk }}
             
             <span class=" talentCaterory">
                 {{category.category_title}}
