@@ -17,10 +17,10 @@
         <div class="carousel-indicators">
             {%for advert in adverts%}
             {%if advert == adverts.first%}
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{advert.id | add:-1}}" class="active" aria-current="true" aria-label="Slide {{advert.id | add:-1}}"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{forloop.counter | add:-1}}" class="active" aria-current="true" aria-label="Slide {{forloop.counter | add:-1}}"></button>
           {%elif advert == adverts.5%}
           {%else%}
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{advert.id | add:-1}}" aria-label="Slide {{advert.id | add:-1}}"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{forloop.counter | add:-1}}" aria-label="Slide {{forloop.counter | add:-1}}"></button>
             {%endif%}
             {%endfor%}
         </div>
