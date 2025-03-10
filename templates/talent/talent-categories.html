@@ -32,9 +32,10 @@
     <div class="row categoryFonts" >
             <div class="col-8 my-auto">
                 <!-- {{forloop.counter|stringformat:"s"|length|add:"-1"}} -->
-            <span class="me-5 cateroryNumber">
+            <span class="me-md-5 me-2 cateroryNumber">
                <!-- {% widthratio page_obj.number 1 page_obj.number % -->
                 {%if category.id|stringformat:"s"|length == 1 %}0{%endif%}{{category.pk }}
+            </span>
             
             <span class=" talentCaterory">
                 {{category.category_title}}
@@ -73,7 +74,7 @@
           <span class="step-links">
               {% if page_obj.has_previous %}
               <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="directions btn btn-secondary pageFont"><i class="bi bi-chevron-left"></i></button></a>
-              <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="btn btn-secondary"> {{page_obj.previous_page_number }}</button></a> 
+              <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="btn btn-secondary pageFont"> {{page_obj.previous_page_number }}</button></a> 
               {% endif %}
     
               <a href="?page={{ page_obj.number }}"><button type="button" class="btn btn-secondary pageFont currentPage"> {{page_obj.number}}</button></a>
